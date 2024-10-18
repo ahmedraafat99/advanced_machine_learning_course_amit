@@ -1,0 +1,27 @@
+def calculater():
+    while True:
+        operation=input("select oparation:1-sum(+) 2-sub(-) 3-div(/) 4-mul(*)")
+        first_num=float(input("first num: "))
+        sec_num=float(input("sec num: "))
+        if operation=="1":
+          print( first_num+sec_num)
+        elif operation=="2":
+          print(first_num-sec_num)
+        elif operation=="3":
+            if sec_num !=0:
+               print(first_num/sec_num)
+            else:
+                print("number can't devided on 0")   
+        elif operation=="4":
+          print(first_num*sec_num)    
+        else:
+           print('your number of oparation is wrong')      
+    
+        continue_calc=input("other oparation(yes/no)").lower()
+        if continue_calc != "yes" :
+           print("end oparation")
+           break      
+       
+calculater()       
+        
+    
